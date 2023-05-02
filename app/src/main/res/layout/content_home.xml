@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Home"
+    tools:showIn="@layout/app_bar_home">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home" />
+
+
+    <com.github.glomadrian.materialanimatedswitch.MaterialAnimatedSwitch
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:id="@+id/location_switch"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="310dp"
+        app:icon_release="@drawable/ic_location_off"
+        app:icon_press="@drawable/ic_location_on"
+        app:base_release_color="@color/baseReleaseColor"
+        app:base_press_color="@color/basePressColor"
+        app:ball_release_color="@color/BallReleaseColor"
+        app:ball_press_color="@color/white"
+
+
+        />
+    <Button
+        android:id="@+id/end"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textColor="@color/white"
+        android:layout_marginLeft="75dp"
+        android:text="Ride END"
+        android:background="@color/red"
+        android:layout_marginBottom="60dp"
+        android:visibility="gone"
+
+
+        />
+
+    <Button
+        android:id="@+id/counter_start"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textColor="@color/white"
+        android:layout_marginLeft="75dp"
+        android:text="Start Counter"
+        android:background="@color/baseReleaseColor"
+        android:visibility="gone"
+        android:layout_marginBottom="120dp"
+
+
+
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/customer_cardView"
+        android:layout_width="250dp"
+       android:layout_gravity="top"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="25dp"
+        app:cardCornerRadius="10dp"
+        android:visibility="gone"
+
+
+
+        android:requiresFadingEdge="vertical"
+        android:fadingEdge="horizontal"
+        android:backgroundTint="@color/crimson"
+
+
+
+        android:layout_height="150dp">
+
+
+        <TextView
+            android:id="@+id/Customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/Customer_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="52dp"
+            android:text="" />
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/Customer_profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="3dp"
+            android:layout_marginLeft="85dp"
+            android:src="@drawable/avatar"
+
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

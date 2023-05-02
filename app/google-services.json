@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "943802656072",
+    "firebase_url": "https://life-saver-app-data.firebaseio.com",
+    "project_id": "life-saver-app-data",
+    "storage_bucket": "life-saver-app-data.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943802656072:android:14762037c90150f6",
+        "android_client_info": {
+          "package_name": "com.cjz.wasif.lifesaverapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943802656072-5s91joke8b6ij1d66tf06i52774j45kb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cjz.wasif.lifesaverapp",
+            "certificate_hash": "8450ec17c273d0967323d65b9d3cbfcc5bf08ba7"
+          }
+        },
+        {
+          "client_id": "943802656072-asucajaob8ml9s11i9ri8c2j6dsnj2m7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxTtUhKCTvz2eshcGFwAYbDyGeihG1c7Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943802656072-asucajaob8ml9s11i9ri8c2j6dsnj2m7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
